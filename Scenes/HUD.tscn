@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4o75jt45pxob"]
+
+[ext_resource type="Script" uid="uid://csemlei41d6li" path="res://Scripts/HUD.gd" id="1_g1yxt"]
+[ext_resource type="Texture2D" uid="uid://woodm2n2xiav" path="res://images/hand_axe.png" id="2_jo1ms"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_g1yxt")
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 120.0
+offset_bottom = 43.0
+text = "Health: 100"
+
+[node name="HandAxe" type="Sprite2D" parent="."]
+position = Vector2(523, 195)
+scale = Vector2(0.43181816, 0.43181813)
+texture = ExtResource("2_jo1ms")
